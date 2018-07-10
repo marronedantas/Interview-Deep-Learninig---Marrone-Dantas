@@ -31,7 +31,10 @@ def relu_alpha(x):
 ```
 opt = Adam(decay=1e-6)
 ```
-4. The maximum convergence occurs with a few times (10), an indication that this occurs in the network is the result of validation (0.2% from training) to follow the training error.
+4. The maximum convergence occurs with a few times (10), an indication that this occurs in the network is the result of validation (0.2% from training) to follow the training error. As the network aims to regression was used mean squared error
+```
+model.compile(optimizer = opt, loss = 'mse', metrics = ['mse','mae'])
+```
 5. The rest of the code are just the exportation.
 
 ## Consideration
@@ -51,6 +54,8 @@ The following is a description of how to execute the code and the necessary comp
 1. Keras
 2. Tensorflow
 3. Scikit-learn
+4. Pandas
+5. Numpy
 
 ### How to run
 
