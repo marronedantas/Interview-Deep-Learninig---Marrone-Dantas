@@ -18,9 +18,10 @@ model.add(Activation(relu_alpha))
 
 1. The dataser pass by standardization for better learning
 ```
+#X is the dataset values
 scaler = StandardScaler()
-	scaler.fit(X)
-	X = scaler.transform(X)
+scaler.fit(X)
+X = scaler.transform(X)
 ```
 2. Was used the Relu activation with modification of alpha, since the prediction have a since the outputs have a large variation.
 ```
